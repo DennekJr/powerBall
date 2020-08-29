@@ -8,7 +8,7 @@ import {Teams} from "./individualTabs/cards";
 
 export const EventDetail = () => {
   return (
-    <div>
+    <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', background: '#20132a', flexDirection: 'column'}}>
       <div className="eventDetailBanner">
         <Details
           image="https://overworld.qodeinteractive.com/wp-content/uploads/2019/10/tour-img-1.png"
@@ -35,16 +35,16 @@ export const EventDetail = () => {
               title="MEET THE TEAMS"
            description="They are"/>
       </div>
-        <div style={{display: 'flex', justifyContent: 'center', background: '#20132a'}}>
-            <div style={{display: 'flex', justifyContent: 'center', overflow: 'scroll',width:'80%'}}>
+        <div style={{display: 'flex', justifyContent: 'center', width: '80%'}}>
+            <div style={{display: 'flex', justifyContent: 'center', overflow: 'scroll'}}>
                 <Teams title="Arsenal" icons={<i className="fa fa-boy"/>} />
                 <Teams title="Chelsea" icons={<i className="fa fa-boy"/>} />
                 <Teams title="Aceu" icons={<i className="fa fa-boy"/>} />
                 <Teams title="Daltoosh" icons={<i className="fa fa-boy"/>} />
-                <Teams title="Daltoosh" icons={<i className="fa fa-boy"/>} />
-                <Teams title="Daltoosh" icons={<i className="fa fa-boy"/>} />
-                <Teams title="Daltoosh" icons={<i className="fa fa-boy"/>} />
-                <Teams title="Daltoosh" icons={<i className="fa fa-boy"/>} />
+                <Teams title="pooch" icons={<i className="fa fa-boy"/>} />
+                <Teams title="Wigg" icons={<i className="fa fa-boy"/>} />
+                <Teams title="DenneJr" icons={<i className="fa fa-boy"/>} />
+                <Teams title="O.D" icons={<i className="fa fa-boy"/>} />
             </div>
         </div>
 

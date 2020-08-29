@@ -47,6 +47,9 @@
 }
 
 /*CARDS */
+.teamsContainer:first-child {
+  margin-left: 20px;
+}
 
 .teamsContainer {
   /*padding: 10px 0;*/

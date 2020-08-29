@@ -2,11 +2,12 @@
     background-image: url("https://overworld.qodeinteractive.com/wp-content/uploads/2019/10/team-title-img.jpg");
     display: block;
     height: 600px;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     position: relative;
-    z-index: -3;
+    z-index: 3;
 }
 
 .detailsContainer {
