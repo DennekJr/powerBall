@@ -13,7 +13,7 @@ export const EventDescription = ({ title, description }: Event) => {
               <div className="vertical1" />
               <div style={{fontSize: '35px', fontWeight: 700, fontFamily: "Rajdhani", color: 'white'}}>{title}</div>
           </div>
-          <div>{description}</div>
+          <div className="eventDescriptionText">{description}</div>
       </div>
   )
 };
