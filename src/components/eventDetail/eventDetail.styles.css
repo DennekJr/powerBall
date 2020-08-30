@@ -18,6 +18,13 @@
     justify-content: center;
 }
 
+.gameTitle-Date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .gameTitle {
     font-family: 'Rajdhani', sans-serif;
     font-weight: 700;
@@ -89,6 +96,12 @@
     padding: 100px 30px 27px 50px;
 }
 
+.eventDescription2 {
+    position: relative;
+    left: 7%;
+    padding: 20px 30px 27px 50px;
+}
+
 .eventDescriptionText {
     color: #BAB9BB;
     font: 15px "Open Sans", sans-serif;
@@ -99,3 +112,52 @@
 
 
 /*TABS NAVIGATION*/
+
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1075px) {
+    .eventQuotaContainer {
+        flex-direction: column;
+    }
+
+    .gameTitle-Date {
+        flex-direction: column;
+    }
+
+    .gameTime {
+        padding: 20px 0;
+    }
+
+    .gameTypeDetail {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .eventDescription {
+        padding: 250px 30px 27px 50px;
+    }
+}
+
+@media (max-width: 550px) {
+    .gameTypeDetail {
+        flex-direction: column;
+    }
+    .eventDescription {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 550px;
+        padding-left: 30px;
+    }
+
+    .verticalTitle {
+        line-height: 30px;
+        font-size: 26px;
+    }
+    .eventDescriptionText {
+        width: 80vw;
+    }
+}

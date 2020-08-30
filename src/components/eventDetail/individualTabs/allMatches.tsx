@@ -22,12 +22,7 @@ export const AllMatches = ({ name1, name2, score1, score2, date }: Event) => {
     >
       <div className="allMatchesContainer">
         <Chip
-          style={{
-            padding: "14px 90px 14px 84px",
-            background: "#6b54b6",
-            color: "white",
-            fontWeight: 800,
-          }}
+            className="nameCards"
         >
           <ChipContact
             style={{
@@ -48,12 +43,7 @@ export const AllMatches = ({ name1, name2, score1, score2, date }: Event) => {
           <h1 style={{ fontSize: "60px" }}>{score2}</h1>
         </div>
         <Chip
-          style={{
-            padding: "14px 90px 14px 84px",
-            background: "#6b54b6",
-            color: "white",
-            fontWeight: 800,
-          }}
+            className="nameCards"
         >
           <ChipContact
             style={{

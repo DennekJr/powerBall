@@ -61,3 +61,27 @@
 .teamsContainer card:hover {
   border-radius: 0 50px 0 50px / 0 25px 3px 25px;
 }
+
+.nameCards {
+  padding: 14px 90px 14px 84px;
+  background: #6b54b6;
+  color: white;
+  font-weight: 800;
+}
+
+
+/*MEDIA QUERIES */
+
+@media (max-width: 750px) {
+  .allMatchesContainer {
+    flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  .nameCards{
+    padding: 14px 30px 14px 30px;
+  }
+  .nameCards h1 {
+    font: 25px 'Rajdhani', sans-serif;
+  }
+}

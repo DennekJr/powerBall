@@ -23,21 +23,22 @@ export const EventQuota = ({
   gamePlayers,
 }: Event) => {
   return (
-    <div>
       <div className="eventQuotaContainer">
-        <div
-          style={{ fontSize: "25px", fontFamily: "Rajdhani", fontWeight: 700, color: 'white' }}
-        >
-          <i className="fa fa-star" />
-          {gameName}
-        </div>
-        <div className="gameTime">
-          {gameDay}
-          {gameTime}
-          {gameLocation}
-        </div>
-        {/*Game type specifics*/}
+          <div className="gameTitle-Date">
+              <div
+                  style={{ fontSize: "25px", fontFamily: "Rajdhani", fontWeight: 700, color: 'white' }}
+              >
+                  <i className="fa fa-star" />
+                  {gameName}
+              </div>
+              <div className="gameTime" style={{paddingLeft: '20px'}}>
+                  {gameDay}
+                  {gameTime}
+                  {gameLocation}
+              </div>
+          </div>
 
+        {/*Game type specifics*/}
         <div className="gameTypeDetail">
           <div className="gameSector">
             <div className="game">
@@ -109,6 +110,5 @@ export const EventQuota = ({
           </div>
         </div>
       </div>
-    </div>
   );
 };

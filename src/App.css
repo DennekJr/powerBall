@@ -5,8 +5,10 @@
 
 .headerColor {
   height: 100px;
+  width: 100vw;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   background: #1b0f23; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -19,3 +21,12 @@
     #42275a
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+@media screen and (max-width: 1024px) {
+  .headerColor {
+    padding: 0;
+    padding-right: 10px;
+  }
+
+}
+

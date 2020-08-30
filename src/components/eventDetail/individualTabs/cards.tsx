@@ -18,7 +18,6 @@ type Event = {
 export const Teams = ({ title, icons }: Event) => {
   return (
     <div className="teamsContainer">
-      <Grid className="grid-1">
         <Cell col={3}>
           <Card
             shadow={0}
@@ -42,7 +41,6 @@ export const Teams = ({ title, icons }: Event) => {
             </CardActions>
           </Card>
         </Cell>
-      </Grid>
     </div>
   );
 };
