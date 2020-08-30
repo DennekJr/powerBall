@@ -1,0 +1,89 @@
+.eventDetailBanner {
+    background-image: url("https://overworld.qodeinteractive.com/wp-content/uploads/2019/10/team-title-img.jpg");
+    display: block;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    z-index: -3;
+}
+
+.detailsContainer {
+    height: 492px;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameTitle {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.eventQuotaContainer {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 38px 27px 40px;
+    background-color: #20132a;
+    box-shadow: 0 10px 27px 0 rgba(6,5,7,.5);
+    box-sizing: border-box;
+    margin-top: -60px;
+    z-index: 1000;
+}
+
+.gameTypeDetail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameTime {
+    padding: 0 21px 0 0;
+    color: #6b54b6;
+    font-size: 14px;
+    font-family: "Rajdhani",sans-serif;
+    font-weight: 600;
+    letter-spacing: .1em;
+}
+
+.game {
+    font-family: "Rajdhani",sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.05em;
+    letter-spacing: .02em;
+}
+
+.gameSector {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+}
+
+
+/*Event Description*/
+
+.verticalTitle {
+    display: flex;
+}
+
+.vertical1 {
+    height: 15px;
+    border-left: 6px solid #6b54b6;
+}
+
+.eventDescription {
+    position: relative;
+    left: 7%;
+    width: 80%;
+    padding: 100px 30px 27px 50px;
+}

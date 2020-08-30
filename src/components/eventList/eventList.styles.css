@@ -1,0 +1,132 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.eventDetailContainer {
+  background: #1b0f23; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1b0f23,
+    #42275a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1b0f23,
+    #42275a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.eventDetailHome {
+  display: flex;
+  align-items: center;
+  height: 200px;
+  padding-top: 20px;
+  flex-direction: row;
+  background: #1b0f23;
+  box-shadow: 0 10px 27px 0 rgba(6,5,7,.5);
+}
+
+.eventDetailHome div {
+    position: absolute;
+    left: 15%;
+    width: 100%;
+}
+
+.vertical {
+  height: 110px;
+  border-left: 6px solid #6b54b6;
+}
+
+.homeText {
+  margin-left: 40px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.homeText span,
+.homeText h2,
+.homeText h5 {
+  color: white;
+}
+
+.homeText h2 {
+  font-size: 60px;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.homeText span,
+.homeText h5 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 14px;
+  line-height: 1.43em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.individualEventsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.reference {
+  display: flex;
+}
+
+.reference h6,
+.reference h5,
+.reference span{
+  font-family: "Rajdhani", sans-serif;
+  margin-right: 5px;
+  color: #6b54b6;
+}
+
+.reference h5 {
+  display: flex;
+  align-items: center;
+  color: #6b54b6; }
+
+.reference h6:hover {
+  color: red;
+}
+
+.compDescription {
+  max-width: 1300px;
+}
+
+.compDescription h3 {
+  font-size: 35px;
+ margin-bottom: 0.5em;
+  font-weight: bold;
+  font-family: "Rajdhani",sans-serif;
+  color: white;
+}
+
+.compDescription h5 {
+  font: 15px "Open Sans", sans-serif;
+  color: #BAB9BB;
+  line-height: 1.7em;
+}
+
+.compDescription a {
+  text-decoration: none;
+  color: white;
+}
+
+.compDescription a i {
+  margin: 10px 0 0 10px;
+}
+
+.compDescription a:hover i {
+  margin-left: 13px;
+  transition: all 0.2s 0.2s;
+}
