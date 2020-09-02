@@ -24,8 +24,8 @@
 
 @media screen and (max-width: 1024px) {
   .headerColor {
-    padding: 0;
-    padding-right: 10px;
+    position: relative;
+    /*right: 20%*/
   }
 
 }

@@ -48,7 +48,7 @@
 
 /*CARDS */
 .teamsContainer:first-child {
-  margin-left: 20px;
+  margin-left: 0;
 }
 
 .teamsContainer {
@@ -64,9 +64,17 @@
 
 .nameCards {
   padding: 14px 90px 14px 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #6b54b6;
   color: white;
   font-weight: 800;
+}
+
+.allMatchesContainer h1 {
+  display: flex;
+  align-items: center;
 }
 
 
@@ -74,6 +82,9 @@
 
 @media (max-width: 750px) {
   .allMatchesContainer {
+    flex-direction: column;
+  }
+  .teamsContainer {
     flex-direction: column;
   }
 }
@@ -84,4 +95,5 @@
   .nameCards h1 {
     font: 25px 'Rajdhani', sans-serif;
   }
+
 }
