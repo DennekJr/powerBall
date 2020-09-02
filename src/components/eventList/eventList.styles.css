@@ -7,8 +7,12 @@ h5 {
   padding: 0;
 }
 
+#eventListBody {
+  margin-bottom: 100px;
+}
+
 .eventDetailContainer {
-  background: #1b0f23; /* fallback for old browsers */
+  /*background: #1b0f23; !* fallback for old browsers *!*/
   background: -webkit-linear-gradient(
     to right,
     #1b0f23,
@@ -23,12 +27,14 @@ h5 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100vw;
 }
 
 .eventDetailHome {
   display: flex;
   align-items: center;
   height: 200px;
+  width: 100%;
   padding-top: 20px;
   flex-direction: row;
   background: #1b0f23;
@@ -37,7 +43,7 @@ h5 {
 
 .eventDetailHome div {
     position: absolute;
-    left: 15%;
+    left: 11%;
     width: 100%;
 }
 
