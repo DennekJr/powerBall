@@ -25,29 +25,33 @@ function App() {
         }
         scroll
       >
-        {/*<Navigation>*/}
-        {/*  <Link to="/eventList">Event List</Link>*/}
-        {/*</Navigation>*/}
       </Header>
       <Content>
         <div className="pageContent">
           <Main />
         </div>
       </Content>
-      <Footer size="mega" className="footer">
-        <FooterSection type="middle">
-          <FooterDropDownSection title="Details">
-            <FooterLinkList>
-              <a href="/EventList">Game List</a>
-            </FooterLinkList>
-          </FooterDropDownSection>
+      <Footer size="mega" className="footer" style={{display: 'flex', justifyContent: 'space-between'}}>
+        <FooterSection type="middle" style={{width: '50%'}}>
           <FooterDropDownSection title="Contact">
             <FooterLinkList>
               <a href="#">Email</a>
               <a href="#">Name</a>
-              <a href="#">Number</a>
+              <a href="#">Email</a>
             </FooterLinkList>
           </FooterDropDownSection>
+        </FooterSection>
+        <FooterSection type="bottom" logo="">
+          <FooterLinkList>
+            <a href="#"><i className="fa fa-facebook"/></a>
+            <a href="#"><i className="fa fa-twitter"/></a>
+            <a href="#"><i className="fa fa-instagram"/></a>
+          </FooterLinkList>
+        </FooterSection>
+        <FooterSection type="bottom" logo="">
+          <FooterLinkList>
+            <p>© 2020 . All Rights Reserved</p>
+          </FooterLinkList>
         </FooterSection>
       </Footer>
     </Layout>
