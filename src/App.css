@@ -23,7 +23,13 @@
 }
 
 .footer {
+  display: flex;
+  justify-content: space-around;
   background: #1b0f23;
+}
+
+.footerSection {
+  width: 30%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -32,5 +38,14 @@
     /*right: 20%*/
   }
 
+}
+
+@media (max-width: 500px) {
+  .footer {
+    display: grid;
+  }
+  .footerSection {
+    width: 100%;
+  }
 }
 
