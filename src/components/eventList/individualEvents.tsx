@@ -39,8 +39,8 @@ export const IndividualEvent = ({
         </div>
         <h3>{title}</h3>
         <h5>{description}</h5>
-        <a>
-          Read More <i className="fa fa-arrow-right"/>
+        <a style={{cursor: 'pointer'}} href="/EventDetail">
+          More Details <i className="fa fa-arrow-right"/>
         </a>
       </div>
     </div>

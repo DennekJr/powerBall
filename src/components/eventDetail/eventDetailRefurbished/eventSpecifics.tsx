@@ -26,7 +26,6 @@ export const EventSpecifics = ({
     <div className="eventSpecifics">
       <div className="eventNameDate">
         <div className="eventName">
-          <i className="fa fa-star" style={{ fontSize: "40px" }} />
           <h3>{gameName}</h3>
         </div>
         <div className="eventDate">

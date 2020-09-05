@@ -4,6 +4,7 @@ import { Details } from "./details";
 import { TabsNavigation } from "./tabNavigation";
 import { Teams } from "./individualTabs/cards";
 import { EventSpecifics } from "./eventDetailRefurbished/eventSpecifics";
+import { Grid } from "react-mdl";
 import {
   TournamentDetails,
   TournamentDetails2,
@@ -43,10 +44,26 @@ export const EventDetail = () => {
           description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
         />
         <TabsNavigation />
-        <TournamentDetails2 meeting="MEET THE TEAMS" />
-        <div style={{ display: "flex", overflow: 'scroll', flexDirection: 'column' }}>
-          <Teams icons={<i className="fa fa-boy" />}  player1="ACEU" player2="DALTOOSH" player3="DENNEKJR" player4="GUIN"/>
-          <Teams icons={<i className="fa fa-boy" />}  player1="DUKE" player2="BOLO" player3="STANJHAE" player4="UNKNOWN"/>
+        <TournamentDetails2 meeting="MEET THE PLAYERS" />
+        <div
+          style={{
+            display: "flex",
+            // overflow: "scroll",
+            flexDirection: "row",
+          }}
+        >
+          <Grid>
+            <Teams player1="ACEU" />
+            <Teams player1="Daltoosh" />
+            <Teams player1="Daltoosh1" />
+            <Teams player1="Daltoosh3" />
+            <Teams player1="Daltoosh5" />
+            <Teams player1="Daltoosh4" />
+            <Teams player1="Daltoosh8" />
+            <Teams player1="Daltoosh54" />
+            <Teams player1="Daltoosh37" />
+            <Teams player1="Daltoosh93" />
+          </Grid>
         </div>
       </div>
     </div>

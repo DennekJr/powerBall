@@ -4,7 +4,7 @@ import './individualTabs.styles.css';
 export const Finished = () => {
     return (
         <div className="finishedContainer">
-            <h1>FINISHED MATCHES FEATURES COMING SOON!!!</h1>
+            <h3>FINISHED MATCHES FEATURES COMING SOON!!!</h3>
         </div>
     );
 };

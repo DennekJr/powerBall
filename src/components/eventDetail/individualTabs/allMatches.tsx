@@ -20,16 +20,12 @@ export const AllMatches = ({ name1, name2, score1, score2, date }: Event) => {
         alignItems: "center",
       }}
     >
+      <div>
+        <h4 className="date">{date}</h4>
+      </div>
       <div className="allMatchesContainer">
-        <Chip
-            className="nameCards"
-        >
-          <ChipContact
-            style={{
-              background: 'url("https://placekitten.com/150/150") 0 0 / cover',
-            }}
-          />
-          <h1>{name1}</h1>
+        <Chip className="nameCards">
+          <h4>{name1}</h4>
         </Chip>
         <div
           style={{
@@ -39,22 +35,12 @@ export const AllMatches = ({ name1, name2, score1, score2, date }: Event) => {
           }}
         >
           <h1 style={{ fontSize: "60px" }}>{score1}</h1>
-            <span style={{ fontSize: "60px" }}>:</span>
+          <span style={{ fontSize: "60px" }}>:</span>
           <h1 style={{ fontSize: "60px" }}>{score2}</h1>
         </div>
-        <Chip
-            className="nameCards"
-        >
-          <ChipContact
-            style={{
-              background: 'url("https://placekitten.com/150/150") 0 0 / cover',
-            }}
-          />
-          <h1>{name2}</h1>
+        <Chip className="nameCards">
+          <h4>{name2}</h4>
         </Chip>
-      </div>
-      <div>
-        <h5 className="date">{date}</h5>
       </div>
     </div>
   );

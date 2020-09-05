@@ -17,7 +17,7 @@
 
 .date {
   color: #6b54b6;
-  font: 14px 'Rajdhani', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 /*UPCOMING*/
@@ -28,8 +28,8 @@
   justify-content: center;
 }
 
-.upcomingContainer h1{
-  font-family: 'Metal Mania', cursive;
+.upcomingContainer h3{
+  font-family: 'Poiret One', cursive;
   color: #ec38bc;
 }
 
@@ -41,8 +41,8 @@
   justify-content: center;
 }
 
-.finishedContainer h1 {
-  font-family: 'Metal Mania', cursive;
+.finishedContainer h3 {
+  font-family: 'Poiret One', cursive;
   color: #ec38bc;
 }
 
@@ -69,7 +69,7 @@
   align-items: center;
   background: #6b54b6;
   color: white;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .allMatchesContainer h1 {

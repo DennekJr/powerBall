@@ -5,7 +5,7 @@ import {EventList} from "../eventList/eventList";
 
 const Main = () => (
     <Switch>
-        <Route exact path="/eventList" component={EventList} />
+        <Route exact path="/" component={EventList} />
         <Route exact path="/eventDetail" component={EventDetail} />
     </Switch>
 );

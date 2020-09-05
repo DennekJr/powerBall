@@ -44,11 +44,11 @@ export const TabsNavigation = () => {
                 activeTab={activeTab}
                 onChange={(tabId) => setActiveTab(tabId)}
                 ripple
-                style={{width: '100%', color: 'black', display: 'flex', justifyContent: 'center'}}
+                style={{display: 'flex', justifyContent: 'center', marginTop: '45px'}}
             >
-                <Tab style={{fontFamily: 'Rajdhani', fontWeight: 400, fontSize: '20px', color: '#6b54b6'}}>ALL MATCHES</Tab>
-                <Tab style={{fontFamily: 'Rajdhani', fontWeight: 400, fontSize: '20px', color: '#6b54b6'}}>UPCOMING</Tab>
-                <Tab style={{fontFamily: 'Rajdhani', fontWeight: 400, fontSize: '20px', color: '#6b54b6'}}>FINISHED</Tab>
+                <Tab style={{fontFamily: 'Rajdhani', fontWeight: 400, fontSize: '30px', color: '#ec38bc'}}>ALL MATCHES</Tab>
+                <Tab style={{fontFamily: 'Rajdhani', fontWeight: 400, fontSize: '30px', color: '#ec38bc'}}>UPCOMING</Tab>
+                <Tab style={{fontFamily: 'Rajdhani', fontWeight: 400, fontSize: '30px', color: '#ec38bc'}}>FINISHED</Tab>
             </Tabs>
             <Grid>
                 <Cell col={12}>
