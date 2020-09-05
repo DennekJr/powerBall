@@ -1,6 +1,7 @@
 import React from "react";
 import "./eventList.styles.css";
 import { IndividualEvent } from "./individualEvents";
+import {Footer, FooterDropDownSection, FooterLinkList, FooterSection} from "react-mdl";
 
 export const EventList = () => {
   return (
@@ -34,6 +35,32 @@ export const EventList = () => {
           description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
         />
       </div>
+        <Footer size="mega" className="footer" style={{width: '100%'}}>
+            <FooterSection type="middle" className="footerSection">
+                <FooterDropDownSection title="Contact">
+                    <FooterLinkList>
+                        <a href="#">Email</a>
+                        <a href="#">Name</a>
+                        <a href="#">Email</a>
+                    </FooterLinkList>
+                </FooterDropDownSection>
+            </FooterSection>
+            <FooterSection type="middle" className="footerSection">
+                <FooterDropDownSection title="Socials">
+                    <FooterLinkList>
+                        <a href="#"><i className="fa fa-facebook"/></a>
+                        <a href="#"><i className="fa fa-twitter"/></a>
+                        <a href="#"><i className="fa fa-instagram"/></a>
+                    </FooterLinkList>
+                </FooterDropDownSection>
+            </FooterSection>
+            <FooterSection type="bottom" logo="">
+                <FooterLinkList>
+                    <p>© 2020 . All Rights Reserved</p>
+                </FooterLinkList>
+            </FooterSection>
+        </Footer>
+
     </div>
   );
 };

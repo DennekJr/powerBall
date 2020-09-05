@@ -4,7 +4,13 @@ import { Details } from "./details";
 import { TabsNavigation } from "./tabNavigation";
 import { Teams } from "./individualTabs/cards";
 import { EventSpecifics } from "./eventDetailRefurbished/eventSpecifics";
-import { Grid } from "react-mdl";
+import {
+  Footer,
+  FooterDropDownSection,
+  FooterLinkList,
+  FooterSection,
+  Grid,
+} from "react-mdl";
 import {
   TournamentDetails,
   TournamentDetails2,
@@ -19,7 +25,6 @@ export const EventDetail = () => {
         alignItems: "center",
         background: "#20132a",
         flexDirection: "column",
-        paddingBottom: "200px",
       }}
     >
       <div className="eventDetailBanner">
@@ -48,8 +53,8 @@ export const EventDetail = () => {
         <div
           style={{
             display: "flex",
-            // overflow: "scroll",
             flexDirection: "row",
+            paddingBottom: "200px",
           }}
         >
           <Grid>
@@ -66,6 +71,37 @@ export const EventDetail = () => {
           </Grid>
         </div>
       </div>
+      <Footer size="mega" className="footer" style={{ width: "100%" }}>
+        <FooterSection type="middle" className="footerSection">
+          <FooterDropDownSection title="Contact">
+            <FooterLinkList>
+              <a href="#">Email</a>
+              <a href="#">Name</a>
+              <a href="#">Email</a>
+            </FooterLinkList>
+          </FooterDropDownSection>
+        </FooterSection>
+        <FooterSection type="middle" className="footerSection">
+          <FooterDropDownSection title="Socials">
+            <FooterLinkList>
+              <a href="#">
+                <i className="fa fa-facebook" />
+              </a>
+              <a href="#">
+                <i className="fa fa-twitter" />
+              </a>
+              <a href="#">
+                <i className="fa fa-instagram" />
+              </a>
+            </FooterLinkList>
+          </FooterDropDownSection>
+        </FooterSection>
+        <FooterSection type="bottom" logo="">
+          <FooterLinkList>
+            <p>© 2020 . All Rights Reserved</p>
+          </FooterLinkList>
+        </FooterSection>
+      </Footer>
     </div>
   );
 };
