@@ -23,15 +23,12 @@ export const EventDetail = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        background: "#20132a",
+        background: "#000000",
         flexDirection: "column",
       }}
     >
       <div className="eventDetailBanner">
-        <Details
-          image="https://overworld.qodeinteractive.com/wp-content/uploads/2019/10/tour-img-1.png"
-          gameTitle="MADRID OPEN"
-        />
+        <Details />
       </div>
       <div className="eventDetailBody">
         <EventSpecifics

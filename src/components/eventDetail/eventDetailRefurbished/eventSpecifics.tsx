@@ -45,7 +45,7 @@ export const EventSpecifics = ({
                 marginRight: "6px",
                 fontSize: "17px",
                 fontWeight: 500,
-                color: "#624ca6",
+                color: "#000",
               }}
             />
             {gamePrice}
@@ -60,7 +60,7 @@ export const EventSpecifics = ({
                 marginRight: "6px",
                 fontSize: "17px",
                 fontWeight: 500,
-                color: "#624ca6",
+                color: "#000",
               }}
             />
             {gameMode}
@@ -75,7 +75,7 @@ export const EventSpecifics = ({
                 marginRight: "6px",
                 fontSize: "17px",
                 fontWeight: 500,
-                color: "#624ca6",
+                color: "#000",
               }}
             />
             {gamePlatform}
@@ -90,7 +90,7 @@ export const EventSpecifics = ({
                 marginRight: "6px",
                 fontSize: "17px",
                 fontWeight: 500,
-                color: "#624ca6",
+                color: "#000",
               }}
             />
             {gamePlayers}

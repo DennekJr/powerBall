@@ -9,43 +9,61 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: #1b0f23; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #1b0f23,
-    #42275a
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #1b0f23,
-    #42275a
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(180deg, #000000, red); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .footer {
   display: flex;
   justify-content: space-around;
-  background: #1b0f23;
+  background: linear-gradient(to top, #000000, red); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding-left: 80px !important;
+  /*flex-direction: column;*/
 }
 
 .footerSection {
   width: 30%;
+  font-family: "Playfair Display",serif;
+  font-style: italic;
+  line-height: 1.85em;
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: .05em;
+  text-transform: uppercase;
 }
 
+@media screen and (max-width: 1500px) {
+  .footer {
+    padding-left: 50px !important;
+  }
+
+  .footerSection {
+    width: 50%;
+  }
+}
 @media screen and (max-width: 1024px) {
   .headerColor {
     position: relative;
     /*right: 20%*/
   }
 
+  .footerSection {
+    width: 50%;
+  }
+
+}
+@media screen and (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footerSection {
+    width: 100%;
+  }
 }
 
 @media (max-width: 500px) {
   .footer {
     display: grid;
-  }
-  .footerSection {
-    width: 100%;
   }
 }
 

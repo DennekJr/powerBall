@@ -1,23 +1,14 @@
 import React from "react";
 import "./eventDetail.styles.css";
 
-type Event = {
-  image: string;
-  gameTitle: string;
-};
+// type Event = {
+//   // gameTitle: string;
+// };
 
-export const Details = ({
-  image,
-  gameTitle,
-}: Event) => {
+export const Details = () => {
   return (
     <div className="detailsContainer">
-      <img
-        src={image}
-        alt="gameImage"
-        style={{width: '303px', height: '222px'}}
-      />
-      <h2 className="gameTitle">{gameTitle}</h2>
+      {/*<h2 className="gameTitle">{gameTitle}</h2>*/}
     </div>
   );
 };

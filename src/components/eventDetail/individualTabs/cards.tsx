@@ -1,51 +1,42 @@
 import React from "react";
 import {
-  Grid,
   Cell,
   Card,
   CardTitle,
-  CardText,
-  CardActions,
-  Button,
 } from "react-mdl";
 import "./individualTabs.styles.css";
 
 type Event = {
   player1: string;
-  // player2: string;
-  // player3: string;
-  // player4: string;
-  // player5: string;
-  // player6: string;
-  // player7: string;
-  // player8: string;
-  // icons: object;
 };
 
 export const Teams = ({ player1 }: Event) => {
   return (
     <div className="teamsContainer">
-        <Cell col={3}>
-          <Card
-            shadow={1}
+      <Cell col={3}>
+        <Card
+          shadow={1}
+          style={{
+            width: "150px",
+            height: "220px",
+            borderRadius: "20px",
+            borderColor: "#20132a",
+            borderWidth: "1px",
+            borderStyle: "dotted",
+              boxShadow: "1px 1px darkred",
+            background: "#000",
+          }}
+        >
+          <CardTitle
+            expand
             style={{
-              width: "150px",
-              height: "220px",
-              borderRadius: "20px",
-              background: "#20132a",
+              color: "#fff",
             }}
           >
-            <CardTitle
-              expand
-              style={{
-                color: "#fff",
-              }}
-            >
-              <h5>{player1}</h5>
-            </CardTitle>
-            {/*<CardText>{icons}</CardText>*/}
-          </Card>
-        </Cell>
+            <h5>{player1}</h5>
+          </CardTitle>
+        </Card>
+      </Cell>
     </div>
   );
 };

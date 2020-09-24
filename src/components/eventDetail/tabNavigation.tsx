@@ -46,9 +46,15 @@ export const TabsNavigation = () => {
                 ripple
                 style={{display: 'flex', justifyContent: 'center', marginTop: '45px'}}
             >
-                <Tab style={{fontFamily: 'Rajdhani', fontWeight: 400, fontSize: '30px', color: '#ec38bc'}}>ALL MATCHES</Tab>
-                <Tab style={{fontFamily: 'Rajdhani', fontWeight: 400, fontSize: '30px', color: '#ec38bc'}}>UPCOMING</Tab>
-                <Tab style={{fontFamily: 'Rajdhani', fontWeight: 400, fontSize: '30px', color: '#ec38bc'}}>FINISHED</Tab>
+                <div>
+                    <Tab className="tab" >ALL MATCHES</Tab>
+                </div>
+                <div>
+                    <Tab className="tab">UPCOMING</Tab>
+                </div>
+                <div>
+                    <Tab className="tab">FINISHED</Tab>
+                </div>
             </Tabs>
             <Grid>
                 <Cell col={12}>

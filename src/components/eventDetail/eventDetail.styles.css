@@ -1,8 +1,10 @@
 .eventDetailBanner {
-    background-image: url("https://overworld.qodeinteractive.com/wp-content/uploads/2019/10/team-title-img.jpg");
+    background-image: url("/images/background-egamerz.jpg");
     display: block;
     height: 600px;
     width: 100%;
+    background-color: black;
+    object-fit: contain;
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -28,149 +30,19 @@
     font-weight: 700;
 }
 
-/*.gameTitle-Date {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    align-items: center;*/
-/*    justify-content: space-between;*/
-/*}*/
+.tab {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: red !important;
+    padding: 0 50px;
+}
 
-/*.gameTitle {*/
-/*    font-family: 'Rajdhani', sans-serif;*/
-/*    font-weight: 700;*/
-/*    color: white;*/
-/*}*/
-
-/*.eventQuotaContainer {*/
-/*    position: absolute;*/
-/*    left: 10%;*/
-/*    width: 80%;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: space-between;*/
-/*    padding: 30px 38px 27px 40px;*/
-/*    background-color: #20132a;*/
-/*    box-shadow: 0 10px 27px 0 rgba(6,5,7,.5);*/
-/*    box-sizing: border-box;*/
-/*    margin-top: -60px;*/
-/*    z-index: 1000;*/
-/*}*/
-
-/*.gameTypeDetail {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*}*/
-
-/*.gameTime {*/
-/*    padding: 0 21px 0 0;*/
-/*    color: #6b54b6;*/
-/*    font-size: 14px;*/
-/*    font-family: "Rajdhani",sans-serif;*/
-/*    font-weight: 600;*/
-/*    letter-spacing: .1em;*/
-/*}*/
-
-/*.game {*/
-/*    font-family: "Rajdhani",sans-serif;*/
-/*    font-weight: 700;*/
-/*    color: #fff;*/
-/*    font-size: 20px;*/
-/*    line-height: 1.05em;*/
-/*    letter-spacing: .02em;*/
-/*}*/
-
-/*.gameSector {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    !*align-items: center;*!*/
-/*    justify-content: center;*/
-/*}*/
-
-
-/*!*Event Description*!*/
-
-/*.verticalTitle {*/
-/*    display: flex;*/
-/*}*/
-
-/*.vertical1 {*/
-/*    height: 15px;*/
-/*    border-left: 6px solid #6b54b6;*/
-/*}*/
-
-/*.eventDescription {*/
-/*    position: relative;*/
-/*    left: 7%;*/
-/*    width: 80%;*/
-/*    padding: 100px 30px 27px 50px;*/
-/*}*/
-
-/*.eventDescription2 {*/
-/*    position: relative;*/
-/*    left: 7%;*/
-/*    padding: 20px 30px 27px 50px;*/
-/*}*/
-
-/*.eventDescriptionText {*/
-/*    color: #BAB9BB;*/
-/*    font: 15px "Open Sans", sans-serif;*/
-/*    font-weight: 400;*/
-/*    line-height: 26px;*/
-/*    margin-top: 20px;*/
-/*}*/
-
-
-/*!*TABS NAVIGATION*!*/
-
-
-
-/*!*MEDIA QUERIES*!*/
-
-/*@media (max-width: 1075px) {*/
-/*    .eventQuotaContainer {*/
-/*        flex-direction: column;*/
-/*    }*/
-
-/*    .gameTitle-Date {*/
-/*        flex-direction: column;*/
-/*    }*/
-
-/*    .gameTime {*/
-/*        padding: 20px 0;*/
-/*    }*/
-
-/*    .gameTypeDetail {*/
-/*        width: 100%;*/
-/*        display: flex;*/
-/*        justify-content: space-around;*/
-/*    }*/
-/*    .eventDescription {*/
-/*        padding: 250px 30px 27px 50px;*/
-/*    }*/
-/*}*/
-
-/*@media (max-width: 550px) {*/
-/*    .gameTypeDetail {*/
-/*        flex-direction: column;*/
-/*    }*/
-/*    .eventDescription {*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        align-items: center;*/
-/*        justify-content: center;*/
-/*        padding-top: 550px;*/
-/*        padding-left: 30px;*/
-/*    }*/
-
-/*    .verticalTitle {*/
-/*        line-height: 30px;*/
-/*        font-size: 26px;*/
-/*    }*/
-/*    .eventDescriptionText {*/
-/*        width: 80vw;*/
-/*    }*/
-/*}*/
+@media (max-width: 800px) {
+    .tab{
+        font-size: 20px;
+    }
+}
 
 @media (max-width: 500px) {
     .detailsContainer h2{

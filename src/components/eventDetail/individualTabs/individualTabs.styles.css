@@ -16,7 +16,7 @@
 }
 
 .date {
-  color: #6b54b6;
+  color: #fff;
   font-family: 'Rajdhani', sans-serif;
 }
 
@@ -30,7 +30,7 @@
 
 .upcomingContainer h3{
   font-family: 'Poiret One', cursive;
-  color: #ec38bc;
+  color: #fff;
 }
 
 /*FINISHED*/
@@ -43,7 +43,7 @@
 
 .finishedContainer h3 {
   font-family: 'Poiret One', cursive;
-  color: #ec38bc;
+  color: #fff;
 }
 
 /*CARDS */
@@ -52,10 +52,9 @@
 }
 
 .teamsContainer {
-  /*padding: 10px 0;*/
   display: flex;
   justify-content: center;
-  background: #20132a;
+  /*background: #20132a;*/
 }
 
 .teamsContainer card:hover {
@@ -67,9 +66,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #20132a;
   color: white;
   font-weight: 600;
+  background: linear-gradient(to right, #000000, red); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .allMatchesContainer h1 {
@@ -94,6 +93,11 @@
   }
   .nameCards h1 {
     font: 25px 'Rajdhani', sans-serif;
+  }
+
+  .upcomingContainer h3,
+  .finishedContainer h3 {
+    font-size: 18px;
   }
 
 }

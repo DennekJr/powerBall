@@ -5,8 +5,11 @@
   align-items: center;
   justify-content: space-between;
   padding: 30px 38px 27px 40px;
-  background-color: #20132a;
-  box-shadow: 0 10px 27px 0 rgba(6, 5, 7, 0.5);
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000000, red); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    box-shadow: 0 10px 27px 0 rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   transform: translateY(-50%);
 }
@@ -49,7 +52,7 @@
   display: inline-block;
   vertical-align: top;
   padding: 0 21px 0 0;
-  color: #6b54b6;
+  color: #fff;
   font-size: 14px;
   font-family: "Rajdhani", sans-serif;
   font-weight: 600;
@@ -79,7 +82,7 @@
 .prizePool {
   line-height: 1.43em;
   margin: 3px 0 0;
-  color: #6b54b6;
+  color: #fff;
   opacity: 0.7;
 }
 
@@ -99,7 +102,7 @@
 .vertical1 {
     height: 25px;
     margin-right: 10px;
-    border-left: 6px solid #6b54b6;
+    border-left: 6px solid red;
 }
 
 .eventDescriptionText {
@@ -148,14 +151,16 @@
         position: relative;
     }
 }
+@media (max-width:  1300px) {
+    .eventSpecifics {
+        transform: translateY(-15%);
+    }
+}
 @media (max-width:  500px) {
     .eventDate {
         display: contents;
         align-items: center;
         justify-content: center;
-    }
-    .eventSpecifics {
-        transform: translateY(-45%);
     }
     .eventType {
         width: 80%;
