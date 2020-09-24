@@ -44,17 +44,11 @@ export const TabsNavigation = () => {
                 activeTab={activeTab}
                 onChange={(tabId) => setActiveTab(tabId)}
                 ripple
-                style={{display: 'flex', justifyContent: 'center', marginTop: '45px'}}
+                style={{marginTop: '45px'}}
             >
-                {/*<div>*/}
                     <Tab className="tab" >ALL MATCHES</Tab>
-                {/*</div>*/}
-                {/*<div>*/}
                     <Tab className="tab">UPCOMING</Tab>
-                {/*</div>*/}
-                {/*<div>*/}
                     <Tab className="tab">FINISHED</Tab>
-                {/*</div>*/}
             </Tabs>
             <Grid>
                 <Cell col={12}>
