@@ -46,15 +46,15 @@ export const TabsNavigation = () => {
                 ripple
                 style={{display: 'flex', justifyContent: 'center', marginTop: '45px'}}
             >
-                <div>
+                {/*<div>*/}
                     <Tab className="tab" >ALL MATCHES</Tab>
-                </div>
-                <div>
+                {/*</div>*/}
+                {/*<div>*/}
                     <Tab className="tab">UPCOMING</Tab>
-                </div>
-                <div>
+                {/*</div>*/}
+                {/*<div>*/}
                     <Tab className="tab">FINISHED</Tab>
-                </div>
+                {/*</div>*/}
             </Tabs>
             <Grid>
                 <Cell col={12}>
