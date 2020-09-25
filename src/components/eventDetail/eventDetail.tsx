@@ -69,7 +69,7 @@ export const EventDetail = () => {
       </div>
       <Footer size="mega" className="footer" style={{ width: "100%" }}>
         <FooterSection type="middle" className="footerSection">
-          <p>© E-Gamerz 2020 . All Rights Reserved</p>
+          <p>© E Gamerz 2020 . All Rights Reserved</p>
         </FooterSection>
         <FooterSection type="middle" className="footerSection">
           <Link to="/Contact" className="contactLink">
