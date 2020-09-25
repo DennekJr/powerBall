@@ -3,12 +3,7 @@ import "./App.css";
 import {
   Layout,
   Header,
-  Navigation,
   Content,
-  Footer,
-  FooterSection,
-  FooterDropDownSection,
-  FooterLinkList,
 } from "react-mdl";
 import { Link } from "react-router-dom";
 import Main from "./components/routes/main";
@@ -19,12 +14,18 @@ function App() {
       <Header
         className="headerColor"
         title={
-          <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-            Home
-          </Link>
+          <img
+            src="/images/icon.png"
+            alt="icon"
+            style={{ objectFit: "contain", height: '100px' }}
+          />
         }
         scroll
-       />
+      >
+        <Link to="/" style={{ textDecoration: "none", color: "white", flexShrink: 1 }}>
+          Home
+        </Link>
+      </Header>
       <Content>
         <div className="pageContent">
           <Main />
