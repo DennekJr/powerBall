@@ -14,7 +14,7 @@
 
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background: linear-gradient(to top, #000000, red); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding-left: 80px !important;
   /*flex-direction: column;*/
@@ -30,7 +30,34 @@
   font-weight: 500;
   letter-spacing: .05em;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.footerSection a {
+  font-size: 10px;
+  color: white;
+  padding-right: 30px;
+  font-family: "Playfair Display",serif;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.footerSection a:hover {
+  color: black;
+}
+
+.footerSection p {
+  font-size: 10px;
+}
+
+.contactLink {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
 
 @media screen and (max-width: 1500px) {
   .footer {
@@ -51,6 +78,10 @@
     width: 50%;
   }
 
+  .footerSection a {
+    padding-right: 5px;
+  }
+
 }
 @media screen and (max-width: 800px) {
   .footer {
@@ -58,6 +89,10 @@
   }
   .footerSection {
     width: 100%;
+  }
+
+  .footerSection a {
+    padding-right: 15px;
   }
 }
 

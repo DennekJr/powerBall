@@ -6,8 +6,6 @@ import { Teams } from "./individualTabs/cards";
 import { EventSpecifics } from "./eventDetailRefurbished/eventSpecifics";
 import {
   Footer,
-  FooterDropDownSection,
-  FooterLinkList,
   FooterSection,
   Grid,
 } from "react-mdl";
@@ -15,6 +13,7 @@ import {
   TournamentDetails,
   TournamentDetails2,
 } from "./eventDetailRefurbished/tournamentDetails";
+import {Link} from "react-router-dom";
 
 export const EventDetail = () => {
   return (
@@ -70,33 +69,26 @@ export const EventDetail = () => {
       </div>
       <Footer size="mega" className="footer" style={{ width: "100%" }}>
         <FooterSection type="middle" className="footerSection">
-          <FooterDropDownSection title="Contact">
-            <FooterLinkList>
-              <a href="#">Email</a>
-              <a href="#">Name</a>
-              <a href="#">Email</a>
-            </FooterLinkList>
-          </FooterDropDownSection>
+          <p>© E-Gamerz 2020 . All Rights Reserved</p>
         </FooterSection>
         <FooterSection type="middle" className="footerSection">
-          <FooterDropDownSection title="Socials">
-            <FooterLinkList>
-              <a href="#">
-                <i className="fa fa-facebook" />
-              </a>
-              <a href="#">
-                <i className="fa fa-twitter" />
-              </a>
-              <a href="#">
-                <i className="fa fa-instagram" />
-              </a>
-            </FooterLinkList>
-          </FooterDropDownSection>
+          <Link to="/Contact" className="contactLink">
+            Contact Us.
+          </Link>
         </FooterSection>
-        <FooterSection type="bottom" logo="">
-          <FooterLinkList>
-            <p>© 2020 . All Rights Reserved</p>
-          </FooterLinkList>
+        <FooterSection type="middle" className="footerSection">
+          <a href="#">
+            <i className="fa fa-facebook" />
+            <span>. Facebook</span>
+          </a>
+          <a href="#">
+            <i className="fa fa-twitter" />
+            <span>. Twitter</span>
+          </a>
+          <a href="#">
+            <i className="fa fa-instagram" />
+            <span>. Instagram</span>
+          </a>
         </FooterSection>
       </Footer>
     </div>

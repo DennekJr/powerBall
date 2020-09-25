@@ -33,10 +33,14 @@
 .tab {
     font-family: "Playfair Display", serif;
     font-weight: 400;
+    font-style: italic;
     font-size: 30px;
     color: red !important;
     padding: 0 50px;
+    display: flex;
+    justify-content: center;
 }
+
 
 @media (max-width: 800px) {
     .tab{
@@ -49,6 +53,6 @@
         font-size: 40px;
     }
     .tab {
-        font-size: 15px;
+        font-size: 12px;
     }
 }

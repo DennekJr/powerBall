@@ -129,3 +129,9 @@ h5 {
   color: brown;
   transition: all 0.1s 0.1s;
 }
+
+.contactLink {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}

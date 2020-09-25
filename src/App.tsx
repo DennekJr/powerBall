@@ -22,7 +22,7 @@ function App() {
         }
         scroll
       >
-        <Link to="/" style={{ textDecoration: "none", color: "white", flexShrink: 1 }}>
+        <Link to="/" style={{ textDecoration: "none", color: "white", flexShrink: 1, fontFamily: '' }}>
           Home
         </Link>
       </Header>

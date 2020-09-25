@@ -1,5 +1,5 @@
 import React from "react";
-import { Chip, ChipContact } from "react-mdl";
+import { Chip } from "react-mdl";
 import "./individualTabs.styles.css";
 
 type Event = {
@@ -18,6 +18,7 @@ export const AllMatches = ({ name1, name2, score1, score2, date }: Event) => {
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "center",
+        paddingBottom: "35px",
       }}
     >
       <div>
