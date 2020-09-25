@@ -29,7 +29,7 @@
 }
 
 .upcomingContainer h3{
-  font-family: 'Poiret One', cursive;
+  font-family: 'Poiret One', serif;
   color: #fff;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .finishedContainer h3 {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Poiret One', serif;
   color: #fff;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .nameCards {
-  padding: 14px 90px 14px 84px;
+  padding: 24px 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,7 +76,9 @@
   align-items: center;
 }
 
-
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after{
+  background-color: red;
+}
 /*MEDIA QUERIES */
 
 @media (max-width: 750px) {

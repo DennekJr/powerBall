@@ -22,8 +22,8 @@
 
 .footerSection {
   width: 30%;
-  font-family: "Playfair Display",serif;
-  font-style: italic;
+  font-family: "Rajdhani",serif;
+  font-style: normal;
   line-height: 1.85em;
   color: rgb(255, 255, 255);
   font-size: 28px;
@@ -36,11 +36,11 @@
 }
 
 .footerSection a {
-  font-size: 10px;
+  font-size: 15px;
   color: white;
   padding-right: 30px;
-  font-family: "Playfair Display",serif;
-  font-style: italic;
+  font-family: "Rajdhani",serif;
+  font-style: normal;
   text-decoration: none;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .footerSection p {
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .contactLink {
@@ -102,3 +102,10 @@
   }
 }
 
+@media screen and (max-width: 1024px)
+{
+  .mdl-layout__header-row {
+    height: 56px;
+    padding: 0 16px 0 2px;
+  }
+}

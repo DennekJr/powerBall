@@ -31,11 +31,11 @@
 }
 
 .tab {
-    font-family: "Playfair Display", serif;
+    font-family: "Rajdhani", serif;
+    font-style: normal;
     font-weight: 400;
-    font-style: italic;
     font-size: 30px;
-    color: red !important;
+    color: #ffffff !important;
     padding: 0 50px;
     display: flex;
     justify-content: center;

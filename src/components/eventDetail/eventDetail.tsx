@@ -5,15 +5,12 @@ import { TabsNavigation } from "./tabNavigation";
 import { Teams } from "./individualTabs/cards";
 import { EventSpecifics } from "./eventDetailRefurbished/eventSpecifics";
 import {
-  Footer,
-  FooterSection,
   Grid,
 } from "react-mdl";
 import {
   TournamentDetails,
   TournamentDetails2,
 } from "./eventDetailRefurbished/tournamentDetails";
-import {Link} from "react-router-dom";
 
 export const EventDetail = () => {
   return (
@@ -67,30 +64,7 @@ export const EventDetail = () => {
           </Grid>
         </div>
       </div>
-      <Footer size="mega" className="footer" style={{ width: "100%" }}>
-        <FooterSection type="middle" className="footerSection">
-          <p>© E Gamerz 2020 . All Rights Reserved</p>
-        </FooterSection>
-        <FooterSection type="middle" className="footerSection">
-          <Link to="/Contact" className="contactLink">
-            Contact Us.
-          </Link>
-        </FooterSection>
-        <FooterSection type="middle" className="footerSection">
-          <a href="#">
-            <i className="fa fa-facebook" />
-            <span>. Facebook</span>
-          </a>
-          <a href="#">
-            <i className="fa fa-twitter" />
-            <span>. Twitter</span>
-          </a>
-          <a href="#">
-            <i className="fa fa-instagram" />
-            <span>. Instagram</span>
-          </a>
-        </FooterSection>
-      </Footer>
+      {/*<MainFooter />*/}
     </div>
   );
 };
