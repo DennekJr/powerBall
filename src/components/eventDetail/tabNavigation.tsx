@@ -20,9 +20,9 @@ export const TabsNavigation = () => {
             return (
                 <div className="matchesGrid">
                     <AllMatches name1="Chelsea FC" name2="Arsenal FC" score1="1" score2="4" date={t('allMatchesTab.date')}/>
-                    <AllMatches name1="Chelsea FC" name2="Arsenal FC" score1="1" score2="4" date="17th October 2019, 11:55"/>
-                    <AllMatches name1="Chelsea FC" name2="Arsenal FC" score1="1" score2="4" date="17th October 2019, 11:55"/>
-                    <AllMatches name1="Chelsea FC" name2="Arsenal FC" score1="1" score2="4" date="17th October 2019, 11:55"/>
+                    <AllMatches name1="Chelsea FC" name2="Arsenal FC" score1="1" score2="4" date={t('allMatchesTab.date')}/>
+                    <AllMatches name1="Chelsea FC" name2="Arsenal FC" score1="1" score2="4" date={t('allMatchesTab.date')}/>
+                    <AllMatches name1="Chelsea FC" name2="Arsenal FC" score1="1" score2="4" date={t('allMatchesTab.date')}/>
                 </div>
             );
         } else if (activeTab === 1) {
