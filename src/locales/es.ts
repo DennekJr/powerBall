@@ -41,6 +41,18 @@ export default {
     tournamentDetails: {
       meeting: "Conocer a los Jugadores",
     },
+
+    /*Contact*/
+    contactHeader: "Escriba una línea si está interesado en unirse",
+    contactSubHeader: "Ponerse en contacto",
+    placeholder: {
+      firstName: "Nombre de Pila",
+      lastName: "Apellido",
+      email: "Correo electrónico",
+      message: "Tu mensaje",
+    },
+    sendButton: "ENVIAR",
+
     /*Footer*/
     copyright: "© E Gamerz 2020. Todos los derechos reservados",
     socials: {

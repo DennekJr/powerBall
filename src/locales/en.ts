@@ -41,6 +41,17 @@ export default {
       meeting: "Meet The Players",
     },
 
+    /*Contact*/
+    contactHeader: "Drop a line if you're interested in joining",
+    contactSubHeader: "Get In Touch",
+    placeholder: {
+      firstName: "First Name",
+      lastName: "Last Name",
+      email: "Email",
+      message: "Your Message",
+    },
+    sendButton: "SEND",
+
     /*Footer*/
     copyright: "© E Gamerz 2020 . All Rights Reserved",
     socials: {
