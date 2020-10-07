@@ -9,15 +9,17 @@ import './eventDetail.styles.css';
 import {AllMatches} from "./individualTabs/allMatches";
 import {Upcoming} from "./individualTabs/upcoming";
 import {Finished} from "./individualTabs/finished";
+import { useTranslation } from "react-i18next";
 
 export const TabsNavigation = () => {
+    const { t } = useTranslation();
     const [activeTab, setActiveTab] = useState(0);
 
     function toggleCategories() {
         if (activeTab === 0) {
             return (
                 <div className="matchesGrid">
-                    <AllMatches name1="Chelsea FC" name2="Arsenal FC" score1="1" score2="4" date="17th October 2019, 11:55"/>
+                    <AllMatches name1="Chelsea FC" name2="Arsenal FC" score1="1" score2="4" date={t('allMatchesTab.date')}/>
                     <AllMatches name1="Chelsea FC" name2="Arsenal FC" score1="1" score2="4" date="17th October 2019, 11:55"/>
                     <AllMatches name1="Chelsea FC" name2="Arsenal FC" score1="1" score2="4" date="17th October 2019, 11:55"/>
                     <AllMatches name1="Chelsea FC" name2="Arsenal FC" score1="1" score2="4" date="17th October 2019, 11:55"/>
@@ -46,9 +48,9 @@ export const TabsNavigation = () => {
                 ripple
                 style={{marginTop: '45px'}}
             >
-                    <Tab className="tab" >ALL MATCHES</Tab>
-                    <Tab className="tab">UPCOMING</Tab>
-                    <Tab className="tab">FINISHED</Tab>
+                    <Tab className="tab" >{t('tabs.allMatches')}</Tab>
+                    <Tab className="tab">{t('tabs.upcoming')}</Tab>
+                    <Tab className="tab">{t('tabs.finished')}</Tab>
             </Tabs>
             <Grid>
                 <Cell col={12}>

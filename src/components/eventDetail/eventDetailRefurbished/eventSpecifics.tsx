@@ -1,5 +1,6 @@
 import React from "react";
 import "./eventDetailsRefurbished.styles.css";
+import { useTranslation } from "react-i18next";
 
 type Event = {
   gameName: string;
@@ -22,6 +23,7 @@ export const EventSpecifics = ({
   gamePlatform,
   gamePlayers,
 }: Event) => {
+  const { t } = useTranslation();
   return (
     <div className="eventSpecifics">
       <div className="eventNameDate">
@@ -50,7 +52,7 @@ export const EventSpecifics = ({
             />
             {gamePrice}
           </div>
-          <div className="prizePool">PRIZE POOL</div>
+          <div className="prizePool">{t('prizePool')}</div>
         </div>
         <div className="playMode">
           <div className="gamePrice">
@@ -65,7 +67,7 @@ export const EventSpecifics = ({
             />
             {gameMode}
           </div>
-          <div className="prizePool">PLAY MODEL</div>
+          <div className="prizePool">{t('playModel')}</div>
         </div>
         <div className="platform">
           <div className="gamePrice">
@@ -80,7 +82,7 @@ export const EventSpecifics = ({
             />
             {gamePlatform}
           </div>
-          <div className="prizePool">PLATFORM</div>
+          <div className="prizePool">{t('platform')}</div>
         </div>
         <div className="players">
           <div className="gamePrice">
@@ -95,7 +97,7 @@ export const EventSpecifics = ({
             />
             {gamePlayers}
           </div>
-          <div className="prizePool">PLAYERS</div>
+          <div className="prizePool">{t('player')}</div>
         </div>
       </div>
     </div>

@@ -4,15 +4,15 @@ import { Details } from "./details";
 import { TabsNavigation } from "./tabNavigation";
 import { Teams } from "./individualTabs/cards";
 import { EventSpecifics } from "./eventDetailRefurbished/eventSpecifics";
-import {
-  Grid,
-} from "react-mdl";
+import { Grid } from "react-mdl";
 import {
   TournamentDetails,
   TournamentDetails2,
 } from "./eventDetailRefurbished/tournamentDetails";
+import { useTranslation } from "react-i18next";
 
 export const EventDetail = () => {
+  const { t } = useTranslation();
   return (
     <div
       style={{
@@ -23,26 +23,24 @@ export const EventDetail = () => {
         flexDirection: "column",
       }}
     >
-      <div className="eventDetailBanner">
-        <Details />
-      </div>
+      <div className="eventDetailBanner">{/*<Details />*/}</div>
       <div className="eventDetailBody">
         <EventSpecifics
-          gameDay="25th august 2020"
+          gameDay={t('gameDay')}
           gameLocation="MADRID"
           gameMode="5V5"
           gameName="FIFA 20"
           gamePlatform="PC"
-          gamePlayers="4 GROUPS"
+          gamePlayers={t('gamePlayers')}
           gamePrice="280K"
           gameTime="15:00"
         />
         <TournamentDetails
-          about="ABOUT THE TOURNAMENT"
-          description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+          about={t('about')}
+          description={t('description')}
         />
         <TabsNavigation />
-        <TournamentDetails2 meeting="MEET THE PLAYERS" />
+        <TournamentDetails2 meeting={t('tournamentDetails.meeting')} />
         <div
           style={{
             display: "flex",

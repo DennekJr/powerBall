@@ -5,20 +5,28 @@
   align-items: center;
   justify-content: space-between;
   padding: 30px 38px 27px 40px;
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #000000, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #000000, red); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #000000,
+    #ff6e7f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #000000,
+    red
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    box-shadow: 0 10px 27px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 27px 0 rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   transform: translateY(-50%);
 }
 
 .eventType {
-    display: flex;
-    width: 40%;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .eventNameDate {
@@ -67,6 +75,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 110px;
 }
 
 .gamePrice {
@@ -89,83 +98,81 @@
 /*ABOUT AND DESCRIPTION*/
 
 .aboutDescription {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
 }
 
 .verticalLineAbout {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .vertical1 {
-    height: 25px;
-    margin-right: 10px;
-    border-left: 6px solid red;
+  height: 25px;
+  margin-right: 10px;
+  border-left: 6px solid red;
 }
 
 .eventDescriptionText {
-    color: #BAB9BB;
-    font: 15px "Open Sans", sans-serif;
-    font-weight: 400;
-    line-height: 26px;
-    margin-top: 20px;
+  color: #bab9bb;
+  font: 15px "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 20px;
 }
 
 /*END*/
 
-
-
 @media (max-width: 1550px) {
-    .eventSpecifics {
-        flex-direction: column;
-    }
+  .eventSpecifics {
+    flex-direction: column;
+  }
 
-    .eventNameDate {
-        flex-direction: column;
-        margin-bottom: 20px;
-    }
+  .eventNameDate {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
 
-    .eventType,
-    .eventNameDate {
-        width: 60%;
-    }
+  .eventType,
+  .eventNameDate {
+    width: 60%;
+  }
 }
 
-@media (max-width:  1000px) {
-    .eventType {
-        flex-direction: column;
-    }
-    .gamePricePrizePool,
-    .playMode,
-    .platform,
-    .players {
-        margin-bottom: 20px;
-    }
-    .eventNameDate {
-        width: 100%;
-    }
-    .aboutDescription {
-        width: 100%;
-        position: relative;
-    }
+@media (max-width: 1000px) {
+  .eventType {
+    flex-direction: column;
+  }
+  .gamePricePrizePool,
+  .playMode,
+  .platform,
+  .players {
+    margin-bottom: 20px;
+  }
+  .eventNameDate {
+    width: 100%;
+  }
+  .aboutDescription {
+    width: 100%;
+    position: relative;
+  }
 }
-@media (max-width:  1300px) {
-    .eventSpecifics {
-        transform: translateY(-15%);
-    }
+@media (max-width: 1300px) {
+  .eventSpecifics {
+    transform: translateY(-15%);
+  }
 }
-@media (max-width:  500px) {
-    .eventDate {
-        display: contents;
-        align-items: center;
-        justify-content: center;
-    }
-    .eventType {
-        width: 80%;
-    }
-    .verticalLineAbout .about {
-        font-size: 25px;
-    }
+@media (max-width: 500px) {
+  .eventDate {
+    display: contents;
+    align-items: center;
+    justify-content: center;
+  }
+  .eventType {
+    width: 80%;
+  }
+  .verticalLineAbout .about {
+    font-size: 25px;
+  }
 }

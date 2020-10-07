@@ -1,5 +1,7 @@
 import React from "react";
 import "./eventList.styles.css";
+import {  useTranslation } from "react-i18next";
+
 
 type Event = {
   image: string;
@@ -14,6 +16,7 @@ export const IndividualEvent = ({
   title,
   description,
 }: Event) => {
+  const { t } = useTranslation();
   return (
     <div className="individualEventsContainer">
       <img
@@ -30,7 +33,7 @@ export const IndividualEvent = ({
         <h3>{title}</h3>
         <h5>{description}</h5>
         <a style={{cursor: 'pointer'}} href="/EventDetail">
-          More Details <i className="fa fa-arrow-right"/>
+          {t('more')} <i className="fa fa-arrow-right"/>
         </a>
       </div>
     </div>

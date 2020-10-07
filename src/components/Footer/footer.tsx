@@ -4,31 +4,33 @@ import {
     Footer,
     FooterSection,
 } from "react-mdl";
+import {  useTranslation } from "react-i18next";
 
 export const MainFooter = () => {
+    const { t } = useTranslation();
     return (
         <div>
             <Footer size="mega" className="footer" style={{ width: "100%" }}>
                 <FooterSection type="middle" className="footerSection">
-                    <p>© E Gamerz 2020 . All Rights Reserved</p>
+                    <p>{t('copyright')}</p>
                 </FooterSection>
                 <FooterSection type="middle" className="footerSection">
                     <Link to="/Contact" className="contactLink">
-                        Contact Us.
+                        {t('contact')}
                     </Link>
                 </FooterSection>
                 <FooterSection type="middle" className="footerSection">
                     <a href="#">
                         <i className="fa fa-facebook" />
-                        <span>. Facebook</span>
+                        <span>. {t('socials.facebook')}</span>
                     </a>
                     <a href="#">
                         <i className="fa fa-twitter" />
-                        <span>. Twitter</span>
+                        <span>. {t('socials.twitter')}</span>
                     </a>
                     <a href="#">
                         <i className="fa fa-instagram" />
-                        <span>. Instagram</span>
+                        <span>. {t('socials.instagram')}</span>
                     </a>
                 </FooterSection>
             </Footer>

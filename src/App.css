@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+p {
+  margin-bottom: 0;
+}
 
 .headerColor {
   height: 100px;
@@ -18,6 +21,21 @@
   background: linear-gradient(to top, #000000, red); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding-left: 80px !important;
   /*flex-direction: column;*/
+}
+
+.headerButton {
+  background-color: black;
+  color: white;
+  padding: 1px;
+  border: 1px solid grey;
+  margin-right: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.headerButton:hover {
+  background: linear-gradient(to top, #000000, grey);
+  border: 1px solid grey;
 }
 
 .footerSection {

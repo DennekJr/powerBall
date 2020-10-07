@@ -5,7 +5,14 @@ import { Link } from "react-router-dom";
 import Main from "./components/routes/main";
 import { MainFooter } from "./components/Footer/footer";
 
+import { Trans, useTranslation } from "react-i18next";
+
 function App() {
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = (language: any) => {
+        i18n.changeLanguage(language);
+    };
   return (
     <Layout>
       <Header
@@ -32,7 +39,7 @@ function App() {
             marginRight: "60px",
           }}
         >
-          Home
+            {t('home')}
         </Link>
         <Link
           to="/Contact"
@@ -45,8 +52,10 @@ function App() {
             textDecoration: "none",
           }}
         >
-          Contact Us
+            {t('contact')}
         </Link>
+          <button onClick={() => changeLanguage("en")} className="headerButton">EN</button>
+          <button onClick={() => changeLanguage("es")} className="headerButton">ES</button>
       </Header>
       <Content>
         <div className="pageContent">
