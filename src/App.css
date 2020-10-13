@@ -12,19 +12,18 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(180deg, #000000, red); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(180deg, #000000, red);
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(to top, #000000, red); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to top, #000000, red);
   padding-left: 80px !important;
-  /*flex-direction: column;*/
 }
 
 .headerButton {
-  background-color: black;
+  background-color: inherit;
   color: white;
   padding: 1px;
   border: 1px solid grey;

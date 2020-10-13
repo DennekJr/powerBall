@@ -1,6 +1,5 @@
 import React from "react";
 import "./eventDetail.styles.css";
-import { Details } from "./details";
 import { TabsNavigation } from "./tabNavigation";
 import { Teams } from "./individualTabs/cards";
 import { EventSpecifics } from "./eventDetailRefurbished/eventSpecifics";
@@ -62,7 +61,6 @@ export const EventDetail = () => {
           </Grid>
         </div>
       </div>
-      {/*<MainFooter />*/}
     </div>
   );
 };

@@ -1,7 +1,7 @@
 export default {
   translation: {
     /*Header*/
-    home: "Casa",
+    home: "Inicio",
     contact: "Contacto",
 
     /*Event List*/

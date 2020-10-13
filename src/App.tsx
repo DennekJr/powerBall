@@ -1,17 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
 import { Layout, Header, Content } from "react-mdl";
 import { Link } from "react-router-dom";
 import Main from "./components/routes/main";
 import { MainFooter } from "./components/Footer/footer";
 
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 function App() {
     const { t, i18n } = useTranslation();
+    const [lang, setLang] = useState('es');
+    const toggler = () => {
+        lang === 'es'? setLang('en'): setLang('es');
+        changeLanguage().then()
+    };
 
-    const changeLanguage = (language: any) => {
-        i18n.changeLanguage(language);
+    const changeLanguage = async () => {
+       await i18n.changeLanguage(lang);
     };
   return (
     <Layout>
@@ -54,8 +59,7 @@ function App() {
         >
             {t('contact')}
         </Link>
-          <button onClick={() => changeLanguage("en")} className="headerButton">EN</button>
-          <button onClick={() => changeLanguage("es")} className="headerButton">ES</button>
+          <button onClick={toggler} className="headerButton" >{lang.toUpperCase()}</button>
       </Header>
       <Content>
         <div className="pageContent">
