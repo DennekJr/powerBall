@@ -9,9 +9,9 @@ import { useTranslation } from "react-i18next";
 
 function App() {
     const { t, i18n } = useTranslation();
-    const [lang, setLang] = useState('es');
+    const [lang, setLang] = useState('en');
     const toggler = () => {
-        lang === 'es'? setLang('en'): setLang('es');
+        lang === 'en'? setLang('es'): setLang('en');
         changeLanguage().then()
     };
 
