@@ -3,6 +3,7 @@ export default {
     /*Header*/
     home: "Inicio",
     contact: "Contacto",
+    store: "Tienda",
 
     /*Event List*/
     home2: "CASA",
@@ -27,16 +28,17 @@ export default {
     gamePlayers: "4 GRUPOS",
     /*tournament*/
     about: "SOBRE EL TORNEO",
-    /*tabs*/
-    tabs: {
-      allMatches: "PARTIDOS",
-      upcoming: "PRÓXIMAMENTE",
-      finished: "Terminado",
+
+    /* Tournament Bracket */
+    tournamentRound: {
+      round1: "La ronda 1",
+      round2: "La ronda 2",
+      round3: "La ronda 3",
+      semi: "semifinales oeste",
+      east: "semifinales este",
+      final: "Campeonato",
     },
-    /*all Matches*/
-    allMatchesTab: {
-      date: "17 de Octubre de 2019, 11:55",
-    },
+
     /*tournament details*/
     tournamentDetails: {
       meeting: "Conocer a los Jugadores",
@@ -53,12 +55,27 @@ export default {
     },
     sendButton: "ENVIAR",
 
+    /*Store*/
+    storeItemPrice: "$50.00",
+    itemNames: {
+      fifa: "FIFA",
+      cod: "CALL OF DUTY",
+      nba: "NBA",
+      mk: "MORTAL KOMBAT 11",
+    },
+    itemDescription: {
+      fifa:
+          'FIFA significa "Fédération Internationale de Football Association" y es la federación internacional que rige el fútbol de asociaciones (para distinguirlo del "fútbol sindical", es decir, el rugby).',
+      cod: 'Un juego de disparos en primera persona, Call of Duty coloca al jugador al mando de un soldado de infantería que hace uso de varias armas de fuego auténticas de la Segunda Guerra Mundial en combate.',
+      nba: 'La revolución analítica de la NBA (inserte el chiste de La venganza de los nerds aquí) ha cambiado la forma en que pensamos y hablamos sobre el baloncesto.',
+      mk: '"Mortal Kombat." En juegos, MK se refiere a la franquicia de videojuegos "Mortal Kombat", desarrollada originalmente por Midway Games en 1992.',
+    },
     /*Footer*/
     copyright: "© E Gamerz 2020. Todos los derechos reservados",
-    socials: {
-      facebook: "Facebook",
-      twitter: "Gorjeo",
-      instagram: "Instagram",
-    },
+    // socials: {
+    //   facebook: "Facebook",
+    //   twitter: "Twitter",
+    //   instagram: "Instagram",
+    // },
   },
 };

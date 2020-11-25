@@ -10,7 +10,7 @@ type Event = {
   player1: string;
 };
 
-export const Teams = ({ player1 }: Event) => {
+export const Cards = ({ player1 }: Event) => {
   return (
     <div className="teamsContainer">
       <Cell col={3}>

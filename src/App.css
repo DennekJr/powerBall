@@ -6,6 +6,8 @@ p {
   margin-bottom: 0;
 }
 
+
+
 .headerColor {
   height: 100px;
   width: 100vw;
@@ -13,6 +15,18 @@ p {
   justify-content: center;
   flex-direction: column;
   background: linear-gradient(180deg, #000000, red);
+}
+
+.store {
+  color: #ffffff;
+  font-family: "Rajdhani",serif;
+  font-style: normal;
+  line-height: 1.85em;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .footer {
@@ -116,6 +130,7 @@ p {
 @media (max-width: 500px) {
   .footer {
     display: grid;
+    padding-left: 6px !important;
   }
 }
 

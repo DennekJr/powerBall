@@ -3,6 +3,7 @@ export default {
     /*Header*/
     home: "Home",
     contact: "Contact Us",
+    store: "Store",
 
     /*Event List*/
     home2: "HOME",
@@ -26,16 +27,17 @@ export default {
     gamePlayers: "4 GROUPS",
     /*tournament*/
     about: "ABOUT THE TOURNAMENT",
-    /*tabs*/
-    tabs: {
-      allMatches: "MATCHES",
-      upcoming: "UPCOMING",
-      finished: "FINISHED",
+
+    /* Tournament Bracket */
+    tournamentRound: {
+      round1: "Round 1",
+      round2: "Round 2",
+      round3: "Round 3",
+      semi: "west semifinals",
+      east: "easT semifinals",
+      final: "Championship",
     },
-    /*all Matches*/
-    allMatchesTab: {
-      date: "October 17, 2019, 11:55",
-    },
+
     /*tournament details*/
     tournamentDetails: {
       meeting: "Meet The Players",
@@ -52,12 +54,28 @@ export default {
     },
     sendButton: "SEND",
 
+    /*Store*/
+    storeItemPrice: "$50.00",
+    itemNames: {
+      fifa: "FIFA",
+      cod: "CALL OF DUTY",
+      nba: "NBA",
+      mk: "MORTAL KOMBAT 11",
+    },
+    itemDescription: {
+      fifa:
+        'FIFA stands for "Fédération Internationale de Football Association" and is the international federation governing association football (to distinguish it from "union football", i.e. rugby).',
+      cod: 'a first-person shooter, Call of Duty places the player in control of an infantry soldier who makes use of various authentic World War II firearms in combat.',
+      nba: 'The NBA\'s analytics revolution (insert Revenge of the Nerds joke here) has changed the way we think and talk about basketball.',
+      mk: '"Mortal Kombat." In gaming, MK refers to the "Mortal Kombat" video game franchise, originally developed by Midway Games in 1992.',
+    },
+
     /*Footer*/
     copyright: "© E Gamerz 2020 . All Rights Reserved",
-    socials: {
-      facebook: "Facebook",
-      twitter: "Twitter",
-      instagram: "Instagram",
-    },
+    // socials: {
+    //   facebook: "Facebook",
+    //   twitter: "Twitter",
+    //   instagram: "Instagram",
+    // },
   },
 };

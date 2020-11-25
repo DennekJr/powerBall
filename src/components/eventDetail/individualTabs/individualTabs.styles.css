@@ -1,50 +1,3 @@
-.allMatchesContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-}
-
-.allMatchesContainer h1,
-.allMatchesContainer span{
-  line-height: 0;
-  font: 35px 'Rajdhani', sans-serif;
-  font-weight: 700;
-  color: white;
-}
-
-.date {
-  color: #fff;
-  font-family: 'Rajdhani', sans-serif;
-}
-
-/*UPCOMING*/
-
-.upcomingContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.upcomingContainer h3{
-  font-family: 'Poiret One', serif;
-  color: #fff;
-}
-
-/*FINISHED*/
-
-.finishedContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.finishedContainer h3 {
-  font-family: 'Poiret One', serif;
-  color: #fff;
-}
-
 /*CARDS */
 .teamsContainer:first-child {
   margin-left: 0;
@@ -70,20 +23,12 @@
   background: linear-gradient(to right, #000000, red);
 }
 
-.allMatchesContainer h1 {
-  display: flex;
-  align-items: center;
-}
-
 .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after{
   background-color: red;
 }
 /*MEDIA QUERIES */
 
 @media (max-width: 750px) {
-  .allMatchesContainer {
-    flex-direction: column;
-  }
   .teamsContainer {
     flex-direction: column;
   }
@@ -95,10 +40,4 @@
   .nameCards h1 {
     font: 25px 'Rajdhani', sans-serif;
   }
-
-  .upcomingContainer h3,
-  .finishedContainer h3 {
-    font-size: 18px;
-  }
-
 }

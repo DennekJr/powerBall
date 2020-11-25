@@ -22,15 +22,15 @@ export const MainFooter = () => {
                 <FooterSection type="middle" className="footerSection">
                     <a href="#">
                         <i className="fa fa-facebook" />
-                        <span>. {t('socials.facebook')}</span>
+                        <span>. Facebook</span>
                     </a>
                     <a href="#">
                         <i className="fa fa-twitter" />
-                        <span>. {t('socials.twitter')}</span>
+                        <span>. Twitter</span>
                     </a>
                     <a href="#">
                         <i className="fa fa-instagram" />
-                        <span>. {t('socials.instagram')}</span>
+                        <span>. Instagram</span>
                     </a>
                 </FooterSection>
             </Footer>

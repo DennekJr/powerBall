@@ -47,6 +47,8 @@
     ]
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.4",
+    "jquery": "^3.5.1",
     "prettier": "^2.1.1"
   }
 }

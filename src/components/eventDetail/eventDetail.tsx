@@ -1,7 +1,6 @@
 import React from "react";
 import "./eventDetail.styles.css";
-import { TabsNavigation } from "./tabNavigation";
-import { Teams } from "./individualTabs/cards";
+import { Cards } from "./individualTabs/cards";
 import { EventSpecifics } from "./eventDetailRefurbished/eventSpecifics";
 import { Grid } from "react-mdl";
 import {
@@ -9,6 +8,7 @@ import {
   TournamentDetails2,
 } from "./eventDetailRefurbished/tournamentDetails";
 import { useTranslation } from "react-i18next";
+import {TournamentBracket} from "./tournamentBracket/tournamentBracket";
 
 export const EventDetail = () => {
   const { t } = useTranslation();
@@ -38,7 +38,8 @@ export const EventDetail = () => {
           about={t('about')}
           description={t('description')}
         />
-        <TabsNavigation />
+        {/*<TabsNavigation />*/}
+        <TournamentBracket />
         <TournamentDetails2 meeting={t('tournamentDetails.meeting')} />
         <div
           style={{
@@ -48,16 +49,16 @@ export const EventDetail = () => {
           }}
         >
           <Grid>
-            <Teams player1="ACEU" />
-            <Teams player1="Daltoosh" />
-            <Teams player1="Daltoosh1" />
-            <Teams player1="Daltoosh3" />
-            <Teams player1="Daltoosh5" />
-            <Teams player1="Daltoosh4" />
-            <Teams player1="Daltoosh8" />
-            <Teams player1="Daltoosh54" />
-            <Teams player1="Daltoosh37" />
-            <Teams player1="Daltoosh93" />
+            <Cards player1="ACEU" />
+            <Cards player1="Daltoosh" />
+            <Cards player1="Geass" />
+            <Cards player1="Guin" />
+            <Cards player1="Odin" />
+            <Cards player1="Kronos" />
+            <Cards player1="Hal" />
+            <Cards player1="Simp" />
+            <Cards player1="Ferda" />
+            <Cards player1="Virgin" />
           </Grid>
         </div>
       </div>
