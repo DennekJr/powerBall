@@ -1,0 +1,43 @@
+/*CARDS */
+.teamsContainer:first-child {
+  margin-left: 0;
+}
+
+.teamsContainer {
+  display: flex;
+  justify-content: center;
+  /*background: #20132a;*/
+}
+
+.teamsContainer card:hover {
+  border-radius: 0 50px 0 50px / 0 25px 3px 25px;
+}
+
+.nameCards {
+  padding: 24px 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  background: linear-gradient(to right, #000000, red);
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after{
+  background-color: red;
+}
+/*MEDIA QUERIES */
+
+@media (max-width: 750px) {
+  .teamsContainer {
+    flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  .nameCards{
+    padding: 14px 30px 14px 30px;
+  }
+  .nameCards h1 {
+    font: 25px 'Rajdhani', sans-serif;
+  }
+}

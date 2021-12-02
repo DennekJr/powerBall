@@ -2,20 +2,142 @@
   margin: 0;
   padding: 0;
 }
+p {
+  margin-bottom: 0;
+}
+
+
 
 .headerColor {
   height: 100px;
+  width: 100vw;
   display: flex;
   justify-content: center;
-  background: #1b0f23; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #1b0f23,
-    #42275a
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #1b0f23,
-    #42275a
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  flex-direction: column;
+  background: linear-gradient(180deg, #000000, red);
+}
+
+.store {
+  color: #ffffff;
+  font-family: "Rajdhani",serif;
+  font-style: normal;
+  line-height: 1.85em;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to top, #000000, red);
+  padding-left: 80px !important;
+}
+
+.headerButton {
+  background-color: inherit;
+  color: white;
+  padding: 1px;
+  border: 1px solid grey;
+  margin-right: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.headerButton:hover {
+  background: linear-gradient(to top, #000000, grey);
+  border: 1px solid grey;
+}
+
+.footerSection {
+  width: 30%;
+  font-family: "Rajdhani",serif;
+  font-style: normal;
+  line-height: 1.85em;
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerSection a {
+  font-size: 15px;
+  color: white;
+  padding-right: 30px;
+  font-family: "Rajdhani",serif;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.footerSection a:hover {
+  color: black;
+}
+
+.footerSection p {
+  font-size: 15px;
+}
+
+.contactLink {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+
+@media screen and (max-width: 1500px) {
+  .footer {
+    padding-left: 50px !important;
+  }
+
+  .footerSection {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .headerColor {
+    position: relative;
+    /*right: 20%*/
+  }
+
+  .footerSection {
+    width: 50%;
+  }
+
+  .footerSection a {
+    padding-right: 5px;
+  }
+
+}
+@media screen and (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footerSection {
+    width: 100%;
+  }
+
+  .footerSection a {
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    display: grid;
+    padding-left: 6px !important;
+  }
+}
+
+@media screen and (max-width: 1024px)
+{
+  .mdl-layout__header-row {
+    height: 56px;
+    padding: 0 16px 0 2px;
+  }
 }

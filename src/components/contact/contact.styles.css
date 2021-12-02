@@ -1,0 +1,193 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border-bottom: 1px solid #fff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  -webkit-text-fill-color: white;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.contactContainer {
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 80px 150px 80px;
+  /*margin-bottom: 40px;*/
+  /*justify-content: center;*/
+}
+
+.contactPhrase {
+  width: 80%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+.contactPhrase p {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+  letter-spacing: 0.05em;
+}
+
+.contactPhrase hr {
+  width: 30%;
+  border-top: 2px solid red;
+  transition: width 0.5s;
+}
+
+.contactPhrase:hover hr {
+  width: 35%;
+}
+
+.contactHeader {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contactHeader h3 {
+  color: #fff;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+}
+
+.contactHeader hr {
+  width: 50%;
+  border-top: 2px solid red;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nameFields {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contactForm {
+  padding: 40px;
+  width: 80%;
+}
+
+.inputContainer {
+  width: 30%;
+}
+
+.textFieldInputContainer {
+  width: 70%;
+}
+
+.contactFormInput {
+  color: #fff;
+  background-color: #000;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #fff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  /*border-radius: 10px;*/
+}
+
+.submitButtonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submitButton {
+  padding: 12px 50px;
+  color: #ffffff;
+  border: solid 1px red;
+  transition: border-width 0.6s linear;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  border-width: 2px;
+}
+
+@media (max-width: 900px) {
+  .contactPhrase p {
+    font-size: 30px;
+  }
+
+  .contactHeader h3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 800px) {
+  .contactHeader,
+  .contactPhrase,
+  .contactForm {
+    width: 100%;
+  }
+
+  .contactHeader hr {
+    width: 10%;
+  }
+}
+@media (max-width: 600px) {
+  .contactContainer {
+    padding: 60px 20px;
+  }
+
+  .submitButtonContainer {
+    width: 80%;
+  }
+
+  .nameFields {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .inputContainer {
+    width: 100%;
+  }
+
+  .textFieldInputContainer {
+    width: 100%;
+  }
+
+  .contactForm {
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 400px) {
+  .contactContainer {
+    padding: 60px 10px;
+  }
+  .contactPhrase p {
+    font-size: 25px;
+  }
+  .contactHeader h3 {
+    font-size: 15px;
+  }
+  .contactForm {
+    padding: 40px 0;
+  }
+}
